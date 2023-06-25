@@ -10,8 +10,8 @@ function search({ searchResults }) {
 
   const { location, startDate, endDate, noOfGuests } = router.query;
 
-  const formattedStartDate = format(new Date(startDate), "dd MMMM yy");
-  const formattedEndDate = format(new Date(endDate), "dd MMMM yy");
+  const formattedStartDate = format(new Date(startDate), "yyyy-MM-dd");
+  const formattedEndDate = format(new Date(endDate), "yyyy-MM-dd");
   const range = `${formattedStartDate} - ${formattedEndDate}`;
 
   return (
